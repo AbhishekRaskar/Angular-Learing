@@ -1,0 +1,58 @@
+<h1>Hello This is my first app</h1>
+<!-- Just learning purpose to clear basics -->
+<app-learning></app-learning>
+
+<!-- 1.PARENT TO CHILD DATA PASSING -->
+
+<!-- <app-user-profile name ="Mahi" ></app-user-profile>
+<app-user-profile name ="Abhi" ></app-user-profile>
+<app-user-profile name ="AB" ></app-user-profile> -->
+
+<!-- Passing data Parent to Child-->
+<!-- <app-user-profile
+  userName="Mahi"
+  isMarried="true"
+  salary="700000"
+  ></app-user-profile>
+  <app-user-profile
+  userName="Abhi"
+  isMarried="true"
+  salary="70000000"
+  ></app-user-profile>
+  <app-user-profile
+  userName="AB"
+  isMarried="true"
+  salary="7000"
+  ></app-user-profile> -->
+
+<!--Passing data Parent to Child with Attribute Directive -->
+<!-- <app-user-profile
+  *ngFor="let u of users"
+  [userName]="u.name"
+  [isMarried]="u.isMarried"
+  [salary]="u.salary"
+  (myEvent) = "receivedData($event)"
+  >
+</app-user-profile> -->
+
+<!-- 2.  CHILD TO PARENT DATA PASSING -->
+<!-- <app-user-profile
+  *ngFor="let u of users"
+  [userName]="u.name"
+  [isMarried]="u.isMarried"
+  [salary]="u.salary"
+  (myEvent)="receivedData($event)"
+>
+</app-user-profile>
+<button (click)="clear()">Clear Users</button> -->
+
+
+
+
+<!-- <hr> -->
+<!-- <app-jokes></app-jokes> -->
+
+
+<hr>
+<app-a></app-a>
+<app-b1></app-b1>

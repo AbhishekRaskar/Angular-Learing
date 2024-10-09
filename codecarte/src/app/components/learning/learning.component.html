@@ -1,0 +1,62 @@
+<!-- <p>learning works!</p> -->
+
+<!-- interpolation -->
+<!-- <h1>Name - {{ name }} Age - {{ age }} Salary - {{ salary }}</h1> -->
+
+<!-- PIPE CONECEPT -->
+<!-- <h1>Name - {{ name | titlecase }} Age - {{ age }} Salary - {{ salary }}</h1> -->
+<!-- <h1>Name - {{ name | uppercase }} Age - {{ age }} Salary - {{ salary }}</h1> -->
+<!-- <h1> -->
+  <!-- Name - {{ name | uppercase }} Age - {{ age }} Salary - {{ salary | currency : "INR" }} -->
+<!-- </h1> -->
+
+
+<!-- CUSTOM PIPE IMPLEMENTATION -->
+<!-- <h1>Name - {{ name | uppercase }} Age - {{ age }} Salary - {{ salary }} Contact - {{phoneNo | countryCode}}</h1> -->
+
+<!-- WITH SPECIFIC ARGUMNET IN THE PIPE -->
+<!-- <h1>Name - {{ name | uppercase }} Age - {{ age }} Salary - {{ salary }} Contact - {{phoneNo | countryCode : "USA"}}</h1> -->
+
+<!-- Property Binding -->
+<!-- <button [disabled]="isDisabled">Click Me</button> -->
+<!-- <br /> -->
+<!-- <br /> -->
+
+<!-- Event Binding -->
+<!-- <h2>Input Value : {{ inputVal }}</h2> -->
+<!-- <input type="text" [value]="inputVal" (input)="onChange($event)" /> -->
+
+<!-- short way to write event binding-->
+<!-- called as banana in the box -->
+
+<!-- 1.ATTRIBUTE DIRECTIVE -->
+<!-- <input type="text" [(ngModel)]="inputVal" /> -->
+
+<!-- to display the users -->
+<!-- <div>
+  @for (user of users;track user.name){
+  <h4>
+    @if(user.salary > 7000){ Name : {{ user.name }} Status :
+    {{ user.isMarried ? "Married" : "Single" }} Salary : {{ user.salary }} }
+    @else{ Name : {{ user.name }} Status :
+    {{ user.isMarried ? "Married" : "Single" }} Salary : Hidden }
+  </h4>
+  }
+</div> -->
+<!-- <hr /> -->
+
+
+<!-- another way with DIRECTIVES with import common modules-->
+<!-- 2.STURCTUAL DIRECTIVE -->
+<!-- <div *ngFor="let user of users">
+  <h4 *ngIf="user.salary > 7000; else elseBlock">
+    Name : {{ user.name }} Status :
+    {{ user.isMarried ? "Married" : "Single" }} Salary : {{ user.salary }}
+  </h4>
+  <ng-template #elseBlock>
+    <h4>
+      Name : {{ user.name }} Status :
+      {{ user.isMarried ? "Married" : "Single" }} Salary : Hidden
+    </h4>
+  </ng-template>
+</div> -->

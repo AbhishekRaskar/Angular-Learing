@@ -1,0 +1,11 @@
+<h2>Count from A Component - {{ countService.getCounter() }}</h2>
+<button (click)="countService.incrementCounter()">Add</button>
+<hr>
+<label>Writeable Signal</label>
+<h2>Writeable Signal Price from B1 Component - {{ countService.getPrice() }}</h2>
+<button (click)="countService.incrementPrice()">Increment Price by 100</button>
+<br>
+<br>
+<label>Computed Signal</label>
+<h2>Computed Signal Price from B1 Component - {{ countService.triplePrice() }}</h2>
+<hr>
